@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Inter', Helvetica, sans-serif;
+}
+.header {
+    background-color: #F9FAFD; 
+    height: 374px;
+}
+
+nav {
+    padding-top: 1.7rem;
+    padding-left: 1rem;
+}
+
+nav a, .logo-container {
+    margin-right: 1.5rem;
+    text-decoration: none;
+}
+
+.right-nav, .left-nav {
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: column;
+}
+
+.right-nav a, .left-nav a {
+    color: #7B8798;
+}
+
+.header-copy {
+    margin: 1.5rem;
+    margin-left: 1rem;
+}
+
+.header-copy h1 {
+    line-height: 0.75rem;
+}
+
+#second-copy {
+    color: rgb(243, 113, 26);
+}
+
+.header-copy p {
+    color: #535C68;
+}
+
+.header-copy button {
+    height: 2.25rem;
+    border: none;
+    border-radius: 8px;
+    width: 7rem;
+    font-weight: bold;
+}
+
+#try-btn {
+    background-color: #FD815A;
+    color: #FFFFFF;
+    margin-right: 0.5rem;
+}
+
+#download-btn {
+    background-color: #E5ECFF;
+    color: #4965CB;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-content h1, .main-content h4 {
+    line-height: 0.75rem;
+}
+
+.main-content h1 {
+    margin: 0;
+}
+
+.main-content h4 {
+    margin-top: 8rem;
+    color: #7B8798;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: 0.1em;
+    text-align: center;
+
+}
+
+.main-content p {
+    width: 55%;
+    color: #535C68;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+.main-text {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.main-text div {
+    width: 40%;
+}
+
+.main-text div h4 {
+    width: 50%;
+    margin-top: 1rem;
+    margin-bottom: -0.5rem;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #2B2F35;
+}
+
+.main-text div p {
+    width: 100%;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.icon {
+    background-color: #FD815A;
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem; 
+    margin: 1rem;
+}
+.fa-comment-dots, .fa-rocket, .fa-clock {
+    color: #FFFFFF;
+    padding: 0.5rem;
+}
+
+.fa-cloud {
+    padding: 0.37rem;
+    color: #FFFFFF;
+}
+
+@media (max-width: 908px) {
+    .header {
+        background-color: #F9FAFD;
+        height: 374px;
+        width: 100%;
+    }
+
+    nav a:hover {
+        text-decoration: underline;
+        text-decoration-color: blue;
+    }
+
+    .main-content h1 {
+        font-size: 1.5rem;
+    }
+
+    .main-content p {
+        width: 85%;
+    }
+
+    .main-text {
+        width: 90%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-text div {
+        width: 80%;
+    }
+    
+}
+
+@media (min-width: 778px) {
+
+    .header {
+        background-color: #F9FAFD;
+        height: 374px;
+        width: 100%;
+        background-image: url('./design/design.png');
+        background-size: 40% 100%;
+        background-position: bottom right;
+        background-repeat: no-repeat;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 2rem 5.5rem;
+        padding-top: 1.7rem;
+        padding-left: 0;
+        align-items: center;
+    }
+
+    nav .logo-container {
+        display: inline-block;
+    }
+
+    #top-triangle {
+        width: 0;
+        height: 0;
+        border-left: 11px solid transparent;
+        border-right: 11px solid transparent;
+        border-bottom: 11px solid #f6772d;
+        margin-left: -0.1rem;
+        margin-bottom: -0.1rem;
+    }
+    #semi-circle {
+        width: 20px;
+        height: 10px;
+        border-radius: 0 0 15px 15px;
+        background-color: #f9fafd;
+        z-index: 1;
+        position: relative;
+    }
+    #bottom-triangle {
+        width: 0;
+        height: 0;
+        border-left: 25px solid transparent;
+        border-right: 25px solid transparent;
+        border-top: 25px solid #f6772d;
+        margin-top: -0.65rem;
+        margin-left: -0.90rem;
+        z-index: 10;
+    }
+
+    nav a:hover {
+        text-decoration: underline;
+        text-decoration-color: blue;
+    }
+
+    .right-nav {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .right-nav .nav-links {
+        display: block;
+    }
+
+    .left-nav {    
+        display: block;
+    }
+
+    .left-nav a {
+        color: #FFFFFF;
+    }
+
+    .header-copy {
+        margin: 5.5rem;
+        width: 35%;
+    }
+    
+}
